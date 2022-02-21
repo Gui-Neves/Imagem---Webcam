@@ -1,0 +1,15 @@
+.photos{
+    width: 90%;
+    margin: auto;
+}
+.photos__title{
+    font-size: 3.0em;
+    text-align: center;
+}
+.photos__photos__collection{
+    display: flex;
+    justify-content: space-around;
+}
+.photos__photos__collection__canvas{
+    margin-bottom: 10px;
+}

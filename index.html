@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./js/app/userMedia/userMedia.js"></script>
+    <script src="./js/app/dao/UserMediaDao.js"></script>
+    <script src="./js/app/controller/StreamingController.js"></script>
+    <script src="./js/app/view/PhotosView.js"></script>
+    <script src="./js/app/init/init.js"></script>
+    <script> new Init()</script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/web-cam.css">
+    <link rel="stylesheet" href="./css/photos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="">
+        <h1 class="title">Capture photos from WebCam</h1>
+    </header>
+    <main>
+        <section class="web-cam">
+            <div class ="web-cam__player">
+                <video class="web-cam__player__video" autoplay>Video not supported</video>
+            </div>
+            <div class="web-cam__controllers">
+                <button class="web-cam__controllers__capture-photo web-cam__controllers__buttons" onclick="StreamingController.capturePhoto()">Capture Frame</button>
+                <button class="web-cam__controllers__start-video  web-cam__controllers__buttons" onclick="StreamingController.startVideo()">Start Steaming</button>
+                <button class="web-cam__controllers__stop-video  web-cam__controllers__buttons" onclick="StreamingController.stopVideo()">Stop video</button>
+            </div>
+        <section>
+        <section class="photos">
+            <h1 class="photos__title">Your photos</h1>
+            <div class="photos__photos-collection"></div>
+        </section>
+    </main>
+</body>
+</html>
